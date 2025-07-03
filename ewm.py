@@ -19,7 +19,7 @@ def entropy_weight_method(df):
 # -----------------------------
 st.set_page_config(page_title="Entropy Weight Calculator", layout="centered")
 
-st.title("📊 Entropy Weight Method (EWM)")
+st.title(" Entropy Weight Method (EWM)")
 st.markdown("""
 This tool calculates variable weights based on their information content using the **Entropy Weight Method**.
 """)
@@ -36,7 +36,7 @@ data = np.random.randint(100, 10000, size=(n_rows, n_cols))
 columns = [f"Var_{i+1}" for i in range(n_cols)]
 df = pd.DataFrame(data, columns=columns)
 
-st.subheader("🧮 Generated Random Data")
+st.subheader(" Generated Random Data")
 st.dataframe(df)
 
 # Calculate EWM
