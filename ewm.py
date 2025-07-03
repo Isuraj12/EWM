@@ -25,7 +25,7 @@ This tool calculates variable weights based on their information content using t
 """)
 
 # Sidebar user input
-st.sidebar.header("🔧 Settings")
+st.sidebar.header(" Settings")
 n_rows = st.sidebar.slider("Number of Rows", 3, 20, 5)
 n_cols = st.sidebar.slider("Number of Columns", 2, 10, 4)
 random_seed = st.sidebar.number_input("Random Seed", value=42, step=1)
@@ -42,7 +42,7 @@ st.dataframe(df)
 # Calculate EWM
 weights = entropy_weight_method(df)
 
-st.subheader("📈 Entropy Weights")
+st.subheader(" Entropy Weights")
 st.write(weights.round(4))
 
 # Optional bar chart
